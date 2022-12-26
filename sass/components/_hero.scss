@@ -1,0 +1,88 @@
+.hero__btn {
+    margin-top: 30px;
+}
+.hero.section {
+    background-color: var(--head-bg-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('./../images/mobile/Hero-bcgr-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero.section {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+        url('./../images/mobile/Hero-bcgr-mobile@2x.jpg');
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero.section {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+        url('./../images/tablet/Hero-bcgr-tablet.jpg');
+    }
+
+@media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero.section {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                url('./../images/tablet/Hero-bcgr-tablet@2x.jpg');
+            }
+        }
+}
+
+@media screen and (min-width:1200px) {
+    .hero.section {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+        url('./../images/desktop/img-background.jpg');
+    }
+
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+        .hero.section {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+            url('./../images/desktop/img-background@2x.jpg');
+        }
+    }
+}
+
+.hero__title {
+    margin: auto;
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+
+    @media screen and (min-width:1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
